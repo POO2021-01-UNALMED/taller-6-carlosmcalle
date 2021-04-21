@@ -34,7 +34,7 @@ public class Fabricante {
 	        return ventas;
 	    }
 	
-	public static Fabricante paisMasVendedor() {
+	public static Fabricante fabricaMayorVentas() {
 		Fabricante estrella = fabricantes.get(0);
 		for(int i=0; i<fabricantes.size(); i++) {
 			if(fabricantes.get(i).getVentas() > estrella.getVentas()) {
