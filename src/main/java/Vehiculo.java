@@ -73,7 +73,7 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 	}
-	public int getCantidadVehiculos() {
+	public static int getCantidadVehiculos() {
 		return Automovil.getCantidadAutomoviles() + Camioneta.getCantidadCamionetas() + Camion.getCantidadCamiones();
 	}
 	
