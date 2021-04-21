@@ -9,7 +9,7 @@ public class Vehiculo {
 	protected int precio;
 	protected String traccion;
 	protected Fabricante fabricante;
-	
+	protected int cantidadVehiculos = Automovil.getCantidadAutomoviles()+ Camion.getCantidadCamiones()+Camioneta.getCantidadCamionetas();
 	
 	public String getPlaca() {
 		return placa;
@@ -73,8 +73,12 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 	}
-	public static int getCantidadVehiculos() {
-		return Automovil.getCantidadAutomoviles() + Camioneta.getCantidadCamionetas() + Camion.getCantidadCamiones();
+	public int getCantidadVehiculos() {
+		return cantidadVehiculos;
+	}
+	
+	public void setCantidadVehiculos(int cantidadVehiclos) {
+		this.cantidadVehiculos = cantidadVehiculos;
 	}
 	
 	public String vehiculosPorTipo() {
